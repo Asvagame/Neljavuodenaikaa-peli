@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuvapeli</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game">
+        <div id="question-container">
+            <h1>Kummassa kuvassa on: <span id="season"></span></h1>
+            <div id="audio-icon" onclick="playAudio()">🔊</div>
+            <div class="options">
+                <img id="option1" class="option" onclick="selectOption(1)">
+                <img id="option2" class="option" onclick="selectOption(2)">
+            </div>
+            <button id="check-button" onclick="checkAnswer()">Tarkista</button>
+            <div id="next-arrow" onclick="nextQuestion()">➡️</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

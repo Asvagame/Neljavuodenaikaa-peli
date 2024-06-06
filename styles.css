@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Nostaa pelialueen yläreunaan */
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+#game {
+    text-align: center;
+    width: 90%; /* Skaalaa pelialueen leveys 90% näytöstä */
+    max-width: 600px; /* Maksimileveys 600px */
+}
+
+#question-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.option {
+    width: 45%; /* Skaalautuu 45% leveäksi */
+    border: 6px solid rgb(242, 242, 243); /* Alkuperäinen väritetty reunus */
+    cursor: pointer;
+}
+
+.option.selected {
+    border-color: black; /* Musta reunus valinnan jälkeen */
+}
+
+.option.correct {
+    border-color: green;
+}
+
+.option.incorrect {
+    border-color: red;
+}
+
+#audio-icon {
+    cursor: pointer;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+#check-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#check-button:hover {
+    background-color: #44b3e3;
+}
+
+#next-arrow {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    display: none; /* Piilotetaan aluksi */
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.stars {
+    color: gold;
+    font-size: 24px;
+}
+
+#question-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#question-container button:hover {
+    background-color: #44b3e3;
+}
